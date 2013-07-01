@@ -1,3 +1,19 @@
 body {
   background-color:gold;
 }
+#board {
+  width: 400px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+#board .tile {
+  background-color: red;
+}
+
+#board .tile img {
+  display:block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+}

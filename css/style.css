@@ -1,19 +1,123 @@
 body {
-  background-color:gold;
+    background: #777777 url('../textured_stripes.png') center top;
 }
 #board {
-  width: 400px;
+  width: 600px;
+  height: 600px;
   overflow: hidden;
   margin: 50px auto;
-}
-#board .tile {
-  background-color: red;
+  padding-left: 46px;
 }
 
-#board .tile img {
+
+#board td {
   display:block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 174px;
+  height: 174px;
+  border: 8px solid;
   float: left;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 168px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+#board #row-one .box {
+  border-top: none;
+}
+#board #row-three .box {
+  border-bottom: none;
+}
+
+div#game .row > #one, div#game .row > #four, div#game .row > #seven{
+  border-left: none;
+}
+
+div#game .row > #three, div#game .row > #six, div#game .row > #nine{
+  border-right: none;
+}
+
+.scoreboard{
+  width: 1000px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.scoreboard .row {
+  width: 900px;
+  margin: 10px auto;
+
+  font-family: 'Permanent Marker', cursive;
+}
+.score{
+  height: 125px;
+  width: 350px;
+  border-radius: 8px;
+  -moz-box-shadow:7px 5px 16px 8px rgba(101, 99, 99, 0.22);
+  -webkit-box-shadow:7px 5px 16px 8px rgba(101, 99, 99, 0.22);
+  box-shadow:7px 5px 16px 8px rgba(101, 99, 99, 0.22);
+
+}
+
+.kanye{
+  background-color: red;
+  float: left;
+  text-align: left;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.kanye img{
+  height: 95px;
+  width: 95px;
+  text-align: left;
+  border-radius: 8px;
+    margin: 14px;
+}
+.kanye .team-text{
+  float:right;
+  padding: 40px 20px;
+}
+.justin{
+  background-color: blue;
+  float: right;
+  font-size: 1.5em;
+}
+.justin img{
+  height: 95px;
+  width: 95px;
+  float: right;
+  vertical-align: middle;
+  border-radius: 8px;
+  margin: 14px;
+}
+
+.kanquest:before{
+  content:"X";
+  color: red;
+}
+
+.justified:before{
+  content:"O";
+  color: blue;
+}
+.justin .team-text{
+  float:left;
+  padding: 40px 20px;
+}
+#results {
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:350px;
+  margin-left:-175px;
+  margin-top:-195px;
+  padding:60px 0;
+  text-align:center;
+  color: #FFFFFF;
+  background:rgba(0,0,0,0.9);
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  font-size:20px;
 }

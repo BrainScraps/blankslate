@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cool Page</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div class="scoreboard">
+      <div class="row">
+        <div class="kanye score"> <img src="kanye.png" alt="kanye west avatar" /> <div class="team-text"> Kanye: Team X</div></div>
+        <div class="indicator"> </div>
+        <div class="justin score"><img src="justin.png" alt="justin timberlake avatar" /><div class="team-text"> Justin: Team O</div></div>
+      </div>
+    </div>
     <div id="game">
       <div id="board">
-        <div class="tile"><img src="img/636e9da2a3e311e2bbd822000a9f15da_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/636e9da2a3e311e2bbd822000a9f15da_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/c5e75c128aac11e2802422000a9e0927_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/c5e75c128aac11e2802422000a9e0927_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/824e2a966e3011e2b0f722000a9f18db_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/824e2a966e3011e2b0f722000a9f18db_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/f3c0c706643511e28dc022000a1f8c21_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/f3c0c706643511e28dc022000a1f8c21_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/bec1e5d05f3a11e299a722000a9d0ee0_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/bec1e5d05f3a11e299a722000a9d0ee0_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/aa37e2925dcb11e2b45022000a1fb3cd_6.jpg" alt="puppy" /></div>
-        <div class="tile"><img src="img/aa37e2925dcb11e2b45022000a1fb3cd_6.jpg" alt="puppy" /></div>
+        <table>
+          <tr class="row" id="row-one">
+            <td class="box" id="one"></td>
+            <td class="box" id="two"></td>
+            <td class="box" id="three"></td>
+          </tr>
+          <tr class="row" id="row-two">
+            <td class="box" id="four"></td>
+            <td class="box" id="five"></td>
+            <td class="box" id="six"></td>
+          </tr>
+          <tr class="row" id="row-three">
+            <td class="box" id="seven"></td>
+            <td class="box" id="eight"></td>
+            <td class="box" id="nine"></td>
+          </tr>
       </div>
+    </div>
+    <div id="results">
+      <img src="" alt="winner picture"/>
+      <h1><span id="winner-name"> </span> wins!</h1>
+      <button>play again?</button>
     </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+
   </body>
 </html>
 
